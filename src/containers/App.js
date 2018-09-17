@@ -1,9 +1,10 @@
 import { connect } from 'react-redux'
 import App from '../components/App'
 
-const mapStateToProps = ({ }) => ({ })
+import { getTopStories } from './TopStories/actionsCreator'
 
 const mapDispatchToProps = {
+	getTopStories,
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(null, mapDispatchToProps)(App)

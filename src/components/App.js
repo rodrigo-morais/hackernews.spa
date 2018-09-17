@@ -1,14 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const App = () => (
-	<div>TEST HACKER NEWS</div>
-)
+import TopStories from '../containers/TopStories'
 
-App.propTypes = {
+const App = ({ getTopStories }) => {
+	getTopStories()
+
+	return (
+		<TopStories />
+	)
 }
 
-App.defaultProps = {
+App.propTypes = {
+	getTopStories: PropTypes.func.isRequired,
 }
 
 export default App
