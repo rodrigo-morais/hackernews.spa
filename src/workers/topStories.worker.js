@@ -1,5 +1,5 @@
 import { getTopStories } from './topStories'
 
-onmessage = () => {
-	getTopStories(postMessage)
+onmessage = (e) => {
+	getTopStories(e.data, postMessage)
 }
