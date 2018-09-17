@@ -4,9 +4,20 @@ import {
   receiveTopStories,
   failTopStories,
 } from '../actions'
+import localStorage from '../../../lib/safeLocalStorage'
+
+jest.mock('../../../lib/safeLocalStorage')
+jest.mock('../../../workers/topStories.worker', () => class Worker {
+	constructor(stringUrl) {
+		this.url = stringUrl;
+		this.onmessage = () => {};
+	}
+
+	postMessage() {
+	}
+})
 
 describe('actionsCreator', () => {
-	const topStories = [1, 2, 3]
 	const stories = [
 		{ id: 1, title: 'First story' },
 		{ id: 2, title: 'Second story' },
@@ -16,59 +27,43 @@ describe('actionsCreator', () => {
 
 	afterEach(() => {
 		dispatch.mockReset()
-		global.fetch.mockReset()
+		localStorage.get.mockClear()
 	})
 
 	describe('top stories success', () => {
-		describe('first page returns success', () => {
-			beforeEach(() => {
-				global.fetch = jest.fn().mockImplementation((url) => {
-					if (url.includes('topstories.json')) {
-						return Promise.resolve({ ok: true, json: () => topStories })
-					}
-
-					const story = stories[parseInt(url.split('/').slice(-1)[0].replace('.json', ''), 10) - 1]
-					return Promise.resolve({ ok: true, json: () => story })
-				})
-			})
-
-			it('dispatch receiveTopStories', async () => {
-				expect.assertions(3)
-
-				await getTopStories()(dispatch)
-
-					expect(dispatch).toHaveBeenCalledTimes(2)
-					expect(dispatch).toHaveBeenNthCalledWith(1, requestTopStories())
-				expect(dispatch).toHaveBeenLastCalledWith(receiveTopStories(stories))
-			})
+		beforeEach(() => {
+			localStorage.get.mockReturnValue(JSON.stringify(stories))
 		})
 
-		describe('first page returns fail', () => {
-			beforeEach(() => {
-				global.fetch = jest.fn().mockImplementation((url) => {
-					if (url.includes('topstories.json')) {
-						return Promise.resolve({ ok: true, json: () => topStories })
-					}
+		it('dispatch receiveTopStories', async () => {
+			expect.assertions(3)
 
-					return Promise.reject()
-				})
-			})
+			await getTopStories()(dispatch)
 
-			it('dispatch failTopStories', async () => {
-				expect.assertions(3)
+				expect(dispatch).toHaveBeenCalledTimes(2)
+				expect(dispatch).toHaveBeenNthCalledWith(1, requestTopStories())
+				expect(dispatch).toHaveBeenLastCalledWith(receiveTopStories(stories))
+		})
+	})
 
-				await getTopStories()(dispatch)
+	describe('top stories are empty', () => {
+		beforeEach(() => {
+			localStorage.get.mockReturnValue(null)
+		})
 
-					expect(dispatch).toHaveBeenCalledTimes(2)
-					expect(dispatch).toHaveBeenNthCalledWith(1, requestTopStories())
-				expect(dispatch).toHaveBeenLastCalledWith(failTopStories(stories))
-			})
+		it('dispatch only requestTopStories', async () => {
+			expect.assertions(2)
+
+			await getTopStories()(dispatch)
+
+				expect(dispatch).toHaveBeenCalledTimes(1)
+				expect(dispatch).toHaveBeenNthCalledWith(1, requestTopStories())
 		})
 	})
 
 	describe('top stories fail', () => {
 		beforeEach(() => {
-			global.fetch = jest.fn().mockImplementation(() => Promise.reject())
+			localStorage.get.mockImplementation(() => { throw new Error() })
 		})
 
 		it('dispatch failTopStories', async () => {
