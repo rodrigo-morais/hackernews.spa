@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Rendering renders according to design 1`] = `
+<tr>
+  <td
+    className="sc-gZMcBi dKVBSg"
+  >
+    <table
+      className="sc-iwsKbI dtWENv"
+    >
+      <tbody
+        className="sc-htoDjs keqScR"
+      >
+        <tr
+          className="sc-dnqmqq hJxOZJ"
+        >
+          <td
+            className="sc-htpNat dvyfjR"
+          >
+            <a
+              className="sc-bdVaJa kEMvDu"
+              href="#"
+            >
+              <img
+                className="sc-bwzfXH gKcczb"
+                src="test-file-stub"
+              />
+            </a>
+          </td>
+          <td
+            className="sc-bZQynM kjNPar"
+          >
+            <b
+              className="sc-bxivhb CxaZp"
+            >
+              <a
+                className="sc-bdVaJa kEMvDu"
+                href="#"
+              >
+                Hacker News
+              </a>
+            </b>
+            <div
+              className="sc-ifAKCX dzurso"
+            >
+              <a
+                className="sc-bdVaJa kEMvDu"
+                href="newest"
+              >
+                new
+              </a>
+              <span
+                className="sc-EHOje ljUHpj"
+              >
+                |
+              </span>
+            </div>
+            <div
+              className="sc-ifAKCX dzurso"
+            >
+              <a
+                className="sc-bdVaJa kEMvDu"
+                href="https://news.ycombinator.com/newcomments"
+              >
+                comments
+              </a>
+              <span
+                className="sc-EHOje ljUHpj"
+              >
+                |
+              </span>
+            </div>
+            <div
+              className="sc-ifAKCX dzurso"
+            >
+              <a
+                className="sc-bdVaJa kEMvDu"
+                href="https://news.ycombinator.com/show"
+              >
+                show
+              </a>
+              <span
+                className="sc-EHOje ljUHpj"
+              >
+                |
+              </span>
+            </div>
+            <div
+              className="sc-ifAKCX dzurso"
+            >
+              <a
+                className="sc-bdVaJa kEMvDu"
+                href="https://news.ycombinator.com/ask"
+              >
+                ask
+              </a>
+              <span
+                className="sc-EHOje ljUHpj"
+              >
+                |
+              </span>
+            </div>
+            <div
+              className="sc-ifAKCX dzurso"
+            >
+              <a
+                className="sc-bdVaJa kEMvDu"
+                href="https://news.ycombinator.com/jobs"
+              >
+                jobs
+              </a>
+              <span
+                className="sc-EHOje ljUHpj"
+              >
+                |
+              </span>
+            </div>
+            <div
+              className="sc-ifAKCX dzurso"
+            >
+              <a
+                className="sc-bdVaJa kEMvDu"
+                href="https://news.ycombinator.com/submit"
+              >
+                submit
+              </a>
+            </div>
+          </td>
+          <td
+            className="sc-gzVnrw cVeLgT"
+          >
+            <a
+              className="sc-bdVaJa kEMvDu"
+              href="https://news.ycombinator.com/login?goto=news"
+            >
+              login
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+`;

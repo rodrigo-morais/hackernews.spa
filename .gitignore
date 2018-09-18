@@ -5,3 +5,4 @@
 /.env
 /coverage
 /.npmrc
+**/.DS_Store
