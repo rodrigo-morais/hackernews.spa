@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopStories Rendering renders according to design 1`] = `
+<tr
+  className="sc-bdVaJa fePDys"
+>
+  <td>
+    <table
+      className="sc-VigVT ekbYvL"
+    >
+      <tbody
+        className="sc-gqjmRU dopYQG"
+      >
+        <tr
+          className="sc-jTzLTM jmklFQ sc-bdVaJa fePDys"
+        />
+        <tr
+          className="sc-bdVaJa fePDys"
+        >
+          <td
+            className="sc-iwsKbI gvpsZt"
+            colSpan="2"
+          />
+          <td
+            className="sc-iwsKbI gvpsZt"
+          >
+            <a
+              className="sc-gZMcBi fAtYV sc-bwzfXH cQPqep"
+              href="#"
+              onClick={[MockFunction]}
+            >
+              More
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+`;
