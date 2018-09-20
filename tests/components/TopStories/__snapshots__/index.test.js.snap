@@ -6,26 +6,26 @@ exports[`TopStories Rendering renders according to design 1`] = `
 >
   <td>
     <table
-      className="sc-VigVT ekbYvL"
+      className="sc-jTzLTM fHaWlQ"
     >
       <tbody
-        className="sc-gqjmRU dopYQG"
+        className="sc-VigVT hjRoCW"
       >
         <tr
-          className="sc-jTzLTM jmklFQ sc-bdVaJa fePDys"
+          className="sc-fjdhpX XPQYG sc-bdVaJa fePDys"
         />
         <tr
           className="sc-bdVaJa fePDys"
         >
           <td
-            className="sc-iwsKbI gvpsZt"
+            className="sc-gZMcBi iDzNSP"
             colSpan="2"
           />
           <td
-            className="sc-iwsKbI gvpsZt"
+            className="sc-gZMcBi iDzNSP"
           >
             <a
-              className="sc-gZMcBi fAtYV sc-bwzfXH cQPqep"
+              className="sc-gqjmRU gKsMen sc-bwzfXH cQPqep"
               href="#"
               onClick={[Function]}
             >

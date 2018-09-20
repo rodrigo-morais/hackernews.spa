@@ -1,4 +1,5 @@
 import { connect } from 'react-redux'
+
 import TopStories from '../../components/TopStories'
 import { getNextTopStories } from './actionsCreator'
 

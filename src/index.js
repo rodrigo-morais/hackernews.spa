@@ -9,7 +9,7 @@ import store from './store';
 
 render(
   <Provider store={store}>
-		<App />
+    <App />
   </Provider>,
   document.querySelector('[data-main]')
 );

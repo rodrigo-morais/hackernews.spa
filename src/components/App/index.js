@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import TopStories from '../../containers/TopStories'
 import Header from '../Header'
+import Comments from '../Comments'
 
 import Tbody from '../shared/Tbody'
 
@@ -23,9 +25,15 @@ const App = ({ getTopStories }) => {
 			<Table>
 				<Tbody>
 					<Header />
-					<TopStories />
+          <BrowserRouter>
+            <Switch>
+              <Route exact path="/" component={TopStories} />
+              <Route path="/item" component={Comments} />
+            </Switch>
+          </BrowserRouter>
 				</Tbody>
 			</Table>
+
 		</center>
 	)
 }

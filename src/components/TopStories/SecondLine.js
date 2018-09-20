@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 import { HN_URL } from '../../constants'
@@ -15,6 +16,15 @@ const Td = styled.td`
 
 const AColor = styled(A)`
 	color: #828282;
+`
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+	color: #828282;
+
+  &:focus, &:hover, &:visited, &:link, &:active {
+    text-decoration: none;
+  }
 `
 
 const SecondLine = ({ story }) => {
@@ -33,10 +43,12 @@ const SecondLine = ({ story }) => {
 				|&nbsp;
         <AColor href="#">hide</AColor>
         &nbsp;|
-        {story.descendants === 0
-          ? ' discuss'
-          : ` ${story.descendants} comments`
-        }
+            <StyledLink to={`/item?id=${story.id}`}>
+              {story.descendants === 0
+                ? ' discuss'
+                : ` ${story.descendants} comments`
+              }
+            </StyledLink>
 			</Td>
 		</Tr>
 	)
