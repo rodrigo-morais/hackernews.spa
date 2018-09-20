@@ -18,12 +18,12 @@ describe('TopStories', () => {
     })
   })
 
-  describe('onTap callback', () => {
+  describe('onClick callback', () => {
     beforeEach(() => {
       getNextTopStories.mockClear();
     });
 
-    it('execute onTap callback when unlocked', () => {
+    it('execute getNextTopStories callback when unlocked', () => {
       const wrapper = mount(
 				<TopStories topStories={topStories} getNextTopStories={getNextTopStories} />
       );

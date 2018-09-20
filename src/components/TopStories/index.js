@@ -22,7 +22,7 @@ const TrMoreSpace = styled(Tr)`
 	height: 10px;
 `
 
-const TopStories = ({ topStories: { data: { stories, page } }, getNextTopStories }) => (
+const TopStories = ({ topStories: { data: { stories, page, last } }, getNextTopStories }) => (
 	<Tr>
 		<td>
 			<Table>
@@ -31,7 +31,7 @@ const TopStories = ({ topStories: { data: { stories, page } }, getNextTopStories
 							<SecondLine story={story} key={`Second_${story.id}`} />,
 							<ThirdLine key={`Third_${story.id}`} />])}
 					<TrMoreSpace />
-					<More getNextTopStories={getNextTopStories} />
+          {!last && <More getNextTopStories={getNextTopStories} />}
 				</Tbody>
 			</Table>
 		</td>

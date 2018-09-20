@@ -1,6 +1,7 @@
 import {
   REQUESTED_TOP_STORIES,
   RECEIVED_TOP_STORIES,
+  RECEIVED_LAST_TOP_STORIES,
   FAILED_TOP_STORIES,
 } from './constants'
 
@@ -17,6 +18,9 @@ const topStoriesReducer = (state = initialState, action) => {
 
     case RECEIVED_TOP_STORIES:
       return { ...state, ...{ loading: false, data: action.data, error: false } }
+
+    case RECEIVED_LAST_TOP_STORIES:
+      return { ...state, ...{ loading: false, data: { ...state.data, ...action.data }, error: false } }
 
     case FAILED_TOP_STORIES:
       return { ...state, ...{ loading: false, error: true, data: null } }

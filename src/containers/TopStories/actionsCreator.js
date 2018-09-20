@@ -1,6 +1,6 @@
 import { HN_FIRST_PAGE, HN_NEXT_PAGE, HN_PAGE } from '../../constants'
 import localStorage from '../../lib/safeLocalStorage'
-import { requestTopStories, receiveTopStories, failTopStories } from './actions'
+import { requestTopStories, receiveTopStories, receiveLastTopStories, failTopStories } from './actions'
 import TopStoriesWorker from '../../workers/topStories.worker'
 
 const topStoriesWorker = new TopStoriesWorker()
@@ -12,6 +12,10 @@ topStoriesWorker.onmessage = (e) => {
 		globalDispatch(receiveTopStories({ stories: e.data.data, page: e.data.page }))
 	}
 	localStorage.set(e.data.key, JSON.stringify(e.data.data))
+
+  if (e.data.key === HN_NEXT_PAGE && e.data.data.length === 0) {
+		globalDispatch(receiveLastTopStories())
+  }
 
 	if (e.data.page) {
 		localStorage.set(HN_PAGE, e.data.page)
