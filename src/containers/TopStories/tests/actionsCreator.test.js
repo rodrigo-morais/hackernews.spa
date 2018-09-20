@@ -23,6 +23,10 @@ describe('actionsCreator', () => {
 		{ id: 2, title: 'Second story' },
 		{ id: 3, title: 'Third story' },
 	]
+  const data = {
+    page: 1,
+    stories,
+  }
 	const dispatch = jest.fn()
 
 	afterEach(() => {
@@ -42,7 +46,7 @@ describe('actionsCreator', () => {
 
 				expect(dispatch).toHaveBeenCalledTimes(2)
 				expect(dispatch).toHaveBeenNthCalledWith(1, requestTopStories())
-				expect(dispatch).toHaveBeenLastCalledWith(receiveTopStories(stories))
+				expect(dispatch).toHaveBeenLastCalledWith(receiveTopStories(data))
 		})
 	})
 

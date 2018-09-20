@@ -9,7 +9,7 @@ let timeoutID
 
 topStoriesWorker.onmessage = (e) => {
 	if (!localStorage.get(HN_FIRST_PAGE)) {
-		globalDispatch(receiveTopStories(e.data.data))
+		globalDispatch(receiveTopStories({ stories: e.data.data, page: e.data.page }))
 	}
 	localStorage.set(e.data.key, JSON.stringify(e.data.data))
 
@@ -31,7 +31,7 @@ const getTopStories = () => (dispatch) => {
 	try {
 		const stories = localStorage.get(HN_FIRST_PAGE)
 		if (stories) {
-			dispatch(receiveTopStories(JSON.parse(stories)))
+			dispatch(receiveTopStories({ stories: JSON.parse(stories), page: 1 }))
 		}
 	} catch (e) {
 		dispatch(failTopStories())
@@ -42,8 +42,9 @@ const getNextTopStories = () => (dispatch) => {
   dispatch(requestTopStories())
 	try {
 		const stories = localStorage.get(HN_NEXT_PAGE)
-		dispatch(receiveTopStories(JSON.parse(stories)))
-		topStoriesWorker.postMessage(parseInt(localStorage.get(HN_PAGE), 10) + 1)
+    const page = parseInt(localStorage.get(HN_PAGE), 10) + 1
+		dispatch(receiveTopStories({ stories: JSON.parse(stories), page }))
+		topStoriesWorker.postMessage(page)
 	} catch (e) {
 		dispatch(failTopStories())
 	}

@@ -22,12 +22,12 @@ const TrMoreSpace = styled(Tr)`
 	height: 10px;
 `
 
-const TopStories = ({ topStories: { data }, getNextTopStories }) => (
+const TopStories = ({ topStories: { data: { stories, page } }, getNextTopStories }) => (
 	<Tr>
 		<td>
 			<Table>
 				<Tbody>
-					{ !!data && data.map((story, index) => [<FirstLine story={story} key={`First_${story.id}`} index={index} />,
+					{ !!stories && stories.map((story, index) => [<FirstLine story={story} page={page} key={`First_${story.id}`} index={index} />,
 							<SecondLine story={story} key={`Second_${story.id}`} />,
 							<ThirdLine key={`Third_${story.id}`} />])}
 					<TrMoreSpace />

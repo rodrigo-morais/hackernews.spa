@@ -34,13 +34,13 @@ const AHost = styled(A)`
 	color: #828282;
 `
 
-const FirstLine = ({ story, index }) => {
+const FirstLine = ({ story, page, index }) => {
 	const url = story.url ? new URL(story.url) : null
 
 	return (
 		<Tr>
 			<TdRight>
-				<span>{`${index + 1}.`}</span>
+				<span>{`${((page - 1) * 30) + (index + 1)}.`}</span>
 			</TdRight>
 			<Td>
 				<center>
@@ -67,6 +67,7 @@ const FirstLine = ({ story, index }) => {
 
 FirstLine.propTypes = {
 	story: PropTypes.object.isRequired,
+	page: PropTypes.number.isRequired,
 	index: PropTypes.number.isRequired,
 }
 
