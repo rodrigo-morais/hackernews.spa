@@ -27,7 +27,7 @@ exports[`TopStories Rendering renders according to design 1`] = `
             <a
               className="sc-gZMcBi fAtYV sc-bwzfXH cQPqep"
               href="#"
-              onClick={[MockFunction]}
+              onClick={[Function]}
             >
               More
             </a>

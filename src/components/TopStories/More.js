@@ -14,16 +14,17 @@ const AColor = styled(A)`
 	color: #828282;
 `
 
-const More = ({ getNextTopStories }) => (
+const More = ({ page, getNextTopStories }) => (
 	<Tr>
 		<Td colSpan="2"></Td>
 		<Td>
-			<AColor href="#" onClick={getNextTopStories}>More</AColor>
+			<AColor href="#" onClick={() => getNextTopStories(page + 1)}>More</AColor>
 		</Td>
 	</Tr>
 )
 
 More.propTypes = {
+	page: PropTypes.number.isRequired,
 	getNextTopStories: PropTypes.func.isRequired,
 }
 

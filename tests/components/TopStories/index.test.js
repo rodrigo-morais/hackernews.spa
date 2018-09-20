@@ -5,7 +5,7 @@ import { mount } from 'enzyme'
 import TopStories from '../../../src/components/TopStories'
 
 const getNextTopStories = jest.fn()
-const topStories = { data: [] }
+const topStories = { data: { stories: [], page: 1 } }
 
 describe('TopStories', () => {
   describe('Rendering', () => {

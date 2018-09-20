@@ -42,11 +42,10 @@ const getTopStories = () => (dispatch) => {
 	}
 }
 
-const getNextTopStories = () => (dispatch) => {
+const getNextTopStories = (page) => (dispatch) => {
   dispatch(requestTopStories())
 	try {
 		const stories = localStorage.get(HN_NEXT_PAGE)
-    const page = parseInt(localStorage.get(HN_PAGE), 10) + 1
 		dispatch(receiveTopStories({ stories: JSON.parse(stories), page }))
 		topStoriesWorker.postMessage(page)
 	} catch (e) {

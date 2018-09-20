@@ -31,7 +31,7 @@ const TopStories = ({ topStories: { data: { stories, page, last } }, getNextTopS
 							<SecondLine story={story} key={`Second_${story.id}`} />,
 							<ThirdLine key={`Third_${story.id}`} />])}
 					<TrMoreSpace />
-          {!last && <More getNextTopStories={getNextTopStories} />}
+          {!last && <More page={page} getNextTopStories={getNextTopStories} />}
 				</Tbody>
 			</Table>
 		</td>
