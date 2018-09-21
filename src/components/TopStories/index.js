@@ -22,13 +22,13 @@ const TrMoreSpace = styled(Tr)`
 	height: 10px;
 `
 
-const TopStories = ({ topStories: { data: { stories, page, last } }, getNextTopStories }) => (
+const TopStories = ({ topStories: { data: { stories, page, last } }, getNextTopStories, getComments }) => (
 	<Tr>
 		<td>
 			<Table>
 				<Tbody>
 					{ !!stories && stories.map((story, index) => [<FirstLine story={story} page={page} key={`First_${story.id}`} index={index} />,
-							<SecondLine story={story} key={`Second_${story.id}`} />,
+							<SecondLine story={story} getComments={getComments} key={`Second_${story.id}`} />,
 							<ThirdLine key={`Third_${story.id}`} />])}
 					<TrMoreSpace />
           {!last && <More page={page} getNextTopStories={getNextTopStories} />}
@@ -41,6 +41,7 @@ const TopStories = ({ topStories: { data: { stories, page, last } }, getNextTopS
 TopStories.propTypes = {
 	topStories: PropTypes.object.isRequired,
 	getNextTopStories: PropTypes.func.isRequired,
+	getComments: PropTypes.func.isRequired,
 }
 
 export default TopStories

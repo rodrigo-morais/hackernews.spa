@@ -27,7 +27,7 @@ const StyledLink = styled(Link)`
   }
 `
 
-const SecondLine = ({ story }) => {
+const SecondLine = ({ story, getComments }) => {
 	const timeDiff = (new Date() - new Date(story.time * 1000)) / 1000 / 60
 	const time = timeDiff > 60 ? Math.floor(timeDiff / 60) : Math.floor(timeDiff)
 	const timeMeasure = `${timeDiff > 60 ? 'hour' : 'minutes'}${time === 1 ? '' : 's'}`
@@ -43,7 +43,7 @@ const SecondLine = ({ story }) => {
 				|&nbsp;
         <AColor href="#">hide</AColor>
         &nbsp;|
-            <StyledLink to={`/item?id=${story.id}`}>
+            <StyledLink to={`/item?id=${story.id}`} onClick={() => getComments(story.kids)}>
               {story.descendants === 0
                 ? ' discuss'
                 : ` ${story.descendants} comments`
@@ -56,6 +56,7 @@ const SecondLine = ({ story }) => {
 
 SecondLine.propTypes = {
 	story: PropTypes.object.isRequired,
+  getComments: PropTypes.func.isRequired,
 }
 
 export default SecondLine

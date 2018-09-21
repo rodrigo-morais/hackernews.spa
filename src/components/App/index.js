@@ -5,7 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import TopStories from '../../containers/TopStories'
 import Header from '../Header'
-import Comments from '../Comments'
+import Comments from '../../containers/Comments'
 
 import Tbody from '../shared/Tbody'
 
