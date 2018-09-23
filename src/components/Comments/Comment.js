@@ -4,31 +4,26 @@ import styled from 'styled-components'
 
 import { HN_URL } from '../../constants'
 
+import getTime from '../../lib/time'
+
 import Tbody from '../shared/Tbody'
 import Tr from '../shared/Tr'
-import A from '../shared/A'
+import TdShared from '../shared/Td'
+import AColor from '../shared/AColor'
+import Vote from '../shared/Vote'
 
-const Td = styled.td`
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 8pt;
-	color: #828282;
+const Table = styled.table`
+  padding-top: 10px;
+  padding-left: 10px;
+`
+
+const Td = styled(TdShared)`
   padding: 1px;
-  vertical-align: top;
+  font-size: 8pt;
 `
 
-const AColor = styled(A)`
-	color: #828282;
-`
-
-const FirstTd = styled(Td)`
+const TdFirst = styled(TdShared)`
   width: 1px;
-`
-
-const Vote = styled.div`
-	background-size: 10px;
-	background-image: url(../../../assets/images/grayarrow2x.gif);
-	width: 10px;
-	height: 10px;
 `
 
 const Commentary = styled.div`
@@ -50,26 +45,16 @@ const AReply = styled.div`
 `
 
 const Comment = ({ comment, replies }) => {
-	const timeDiff = (new Date() - new Date(comment.time * 1000)) / 1000 / 60
-	const time = timeDiff > 60 ? Math.floor(timeDiff / 60) : Math.floor(timeDiff)
-	const timeMeasure = `${timeDiff > 60 ? 'hour' : 'minutes'}${time === 1 ? '' : 's'}`
-  const Table = styled.table`
-    padding-top: 10px;
-    padding-left: 10px;
-  `
+	const { time, timeMeasure } = getTime(comment.time)
 
   return (
     <Table>
       <Tbody>
         <Tr>
-          <FirstTd>
-          </FirstTd>
+          <TdFirst>
+          </TdFirst>
           <Td>
-              <center>
-                <A href={`${HN_URL}vote?id=18014283&how=up&goto=news`}>
-                  <Vote />
-                </A>
-              </center>
+            <Vote />
           </Td>
           <Td>
             <AColor href={`${HN_URL}user?id=${comment.by}`}>{comment.by}</AColor>

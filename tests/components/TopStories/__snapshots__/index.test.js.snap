@@ -6,23 +6,23 @@ exports[`TopStories Rendering renders according to design 1`] = `
 >
   <td>
     <table
-      className="sc-VigVT ekbYvL"
+      className="sc-iwsKbI gsisiU"
     >
       <tbody
-        className="sc-jTzLTM hkFqJX"
+        className="sc-gZMcBi cwkXTh"
       >
         <tr
           className="sc-bdVaJa fePDys"
         >
           <td
-            className="sc-bxivhb RPNdr sc-htpNat bBeirU"
+            className="sc-EHOje dTXZMF sc-ifAKCX cRBerI"
           >
             <span>
               1.
             </span>
           </td>
           <td
-            className="sc-htpNat bBeirU"
+            className="sc-ifAKCX cRBerI"
           >
             <center>
               <a
@@ -30,13 +30,13 @@ exports[`TopStories Rendering renders according to design 1`] = `
                 href="https://news.ycombinator.com/vote?id=18014283&how=up&goto=news"
               >
                 <div
-                  className="sc-ifAKCX ixPFSp"
+                  className="sc-bxivhb eJAJCc"
                 />
               </a>
             </center>
           </td>
           <td
-            className="sc-htpNat bBeirU"
+            className="sc-ifAKCX cRBerI"
           >
             <a
               className="sc-bwzfXH cQPqep"
@@ -45,11 +45,11 @@ exports[`TopStories Rendering renders according to design 1`] = `
               GraphQL editor – Visual node editor for GraphQL
             </a>
             <span
-              className="sc-EHOje fBEdJW"
+              className="sc-bZQynM kRBAwR"
             >
               (
               <a
-                className="sc-bZQynM goICVT sc-bwzfXH cQPqep"
+                className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
                 href="https://github.com"
               >
                 github.com
@@ -62,16 +62,16 @@ exports[`TopStories Rendering renders according to design 1`] = `
           className="sc-bdVaJa fePDys"
         >
           <td
-            className="sc-gzVnrw bmUpor"
+            className="sc-gzVnrw jetofX sc-ifAKCX cRBerI"
             colSpan="2"
           />
           <td
-            className="sc-gzVnrw bmUpor"
+            className="sc-gzVnrw jetofX sc-ifAKCX cRBerI"
           >
             79
              points by 
             <a
-              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
               href="https://news.ycombinator.com/user?id=aexol"
             >
               aexol
@@ -79,14 +79,14 @@ exports[`TopStories Rendering renders according to design 1`] = `
              0 minutess ago 
             | 
             <a
-              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
               href="#"
             >
               hide
             </a>
              |
             <a
-              className="sc-dnqmqq eMkAIw"
+              className="sc-htoDjs ioPfyt"
               href="/item?id=18045532"
               onClick={[Function]}
             >
@@ -95,20 +95,20 @@ exports[`TopStories Rendering renders according to design 1`] = `
           </td>
         </tr>
         <tr
-          className="sc-iwsKbI fMAcUh sc-bdVaJa fePDys"
+          className="sc-dnqmqq jYIjoo sc-bdVaJa fePDys"
         />
         <tr
           className="sc-bdVaJa fePDys"
         >
           <td
-            className="sc-bxivhb RPNdr sc-htpNat bBeirU"
+            className="sc-EHOje dTXZMF sc-ifAKCX cRBerI"
           >
             <span>
               2.
             </span>
           </td>
           <td
-            className="sc-htpNat bBeirU"
+            className="sc-ifAKCX cRBerI"
           >
             <center>
               <a
@@ -116,13 +116,13 @@ exports[`TopStories Rendering renders according to design 1`] = `
                 href="https://news.ycombinator.com/vote?id=18014283&how=up&goto=news"
               >
                 <div
-                  className="sc-ifAKCX ixPFSp"
+                  className="sc-bxivhb eJAJCc"
                 />
               </a>
             </center>
           </td>
           <td
-            className="sc-htpNat bBeirU"
+            className="sc-ifAKCX cRBerI"
           >
             <a
               className="sc-bwzfXH cQPqep"
@@ -131,11 +131,11 @@ exports[`TopStories Rendering renders according to design 1`] = `
               Vbuild: “Compile” Vue components to standalone HTML/JS/CSS
             </a>
             <span
-              className="sc-EHOje fBEdJW"
+              className="sc-bZQynM kRBAwR"
             >
               (
               <a
-                className="sc-bZQynM goICVT sc-bwzfXH cQPqep"
+                className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
                 href="https://github.com"
               >
                 github.com
@@ -148,16 +148,16 @@ exports[`TopStories Rendering renders according to design 1`] = `
           className="sc-bdVaJa fePDys"
         >
           <td
-            className="sc-gzVnrw bmUpor"
+            className="sc-gzVnrw jetofX sc-ifAKCX cRBerI"
             colSpan="2"
           />
           <td
-            className="sc-gzVnrw bmUpor"
+            className="sc-gzVnrw jetofX sc-ifAKCX cRBerI"
           >
             31
              points by 
             <a
-              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
               href="https://news.ycombinator.com/user?id=manatlan"
             >
               manatlan
@@ -165,14 +165,14 @@ exports[`TopStories Rendering renders according to design 1`] = `
              0 minutess ago 
             | 
             <a
-              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
               href="#"
             >
               hide
             </a>
              |
             <a
-              className="sc-dnqmqq eMkAIw"
+              className="sc-htoDjs ioPfyt"
               href="/item?id=18045813"
               onClick={[Function]}
             >
@@ -181,20 +181,20 @@ exports[`TopStories Rendering renders according to design 1`] = `
           </td>
         </tr>
         <tr
-          className="sc-iwsKbI fMAcUh sc-bdVaJa fePDys"
+          className="sc-dnqmqq jYIjoo sc-bdVaJa fePDys"
         />
         <tr
           className="sc-bdVaJa fePDys"
         >
           <td
-            className="sc-bxivhb RPNdr sc-htpNat bBeirU"
+            className="sc-EHOje dTXZMF sc-ifAKCX cRBerI"
           >
             <span>
               3.
             </span>
           </td>
           <td
-            className="sc-htpNat bBeirU"
+            className="sc-ifAKCX cRBerI"
           >
             <center>
               <a
@@ -202,13 +202,13 @@ exports[`TopStories Rendering renders according to design 1`] = `
                 href="https://news.ycombinator.com/vote?id=18014283&how=up&goto=news"
               >
                 <div
-                  className="sc-ifAKCX ixPFSp"
+                  className="sc-bxivhb eJAJCc"
                 />
               </a>
             </center>
           </td>
           <td
-            className="sc-htpNat bBeirU"
+            className="sc-ifAKCX cRBerI"
           >
             <a
               className="sc-bwzfXH cQPqep"
@@ -217,11 +217,11 @@ exports[`TopStories Rendering renders according to design 1`] = `
               The game industry of Iran (2016)
             </a>
             <span
-              className="sc-EHOje fBEdJW"
+              className="sc-bZQynM kRBAwR"
             >
               (
               <a
-                className="sc-bZQynM goICVT sc-bwzfXH cQPqep"
+                className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
                 href="https://www.polygon.com"
               >
                 www.polygon.com
@@ -234,16 +234,16 @@ exports[`TopStories Rendering renders according to design 1`] = `
           className="sc-bdVaJa fePDys"
         >
           <td
-            className="sc-gzVnrw bmUpor"
+            className="sc-gzVnrw jetofX sc-ifAKCX cRBerI"
             colSpan="2"
           />
           <td
-            className="sc-gzVnrw bmUpor"
+            className="sc-gzVnrw jetofX sc-ifAKCX cRBerI"
           >
             29
              points by 
             <a
-              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
               href="https://news.ycombinator.com/user?id=1_player"
             >
               1_player
@@ -251,14 +251,14 @@ exports[`TopStories Rendering renders according to design 1`] = `
              0 minutess ago 
             | 
             <a
-              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
               href="#"
             >
               hide
             </a>
              |
             <a
-              className="sc-dnqmqq eMkAIw"
+              className="sc-htoDjs ioPfyt"
               href="/item?id=18039056"
               onClick={[Function]}
             >
@@ -267,20 +267,20 @@ exports[`TopStories Rendering renders according to design 1`] = `
           </td>
         </tr>
         <tr
-          className="sc-iwsKbI fMAcUh sc-bdVaJa fePDys"
+          className="sc-dnqmqq jYIjoo sc-bdVaJa fePDys"
         />
         <tr
           className="sc-bdVaJa fePDys"
         >
           <td
-            className="sc-bxivhb RPNdr sc-htpNat bBeirU"
+            className="sc-EHOje dTXZMF sc-ifAKCX cRBerI"
           >
             <span>
               4.
             </span>
           </td>
           <td
-            className="sc-htpNat bBeirU"
+            className="sc-ifAKCX cRBerI"
           >
             <center>
               <a
@@ -288,13 +288,13 @@ exports[`TopStories Rendering renders according to design 1`] = `
                 href="https://news.ycombinator.com/vote?id=18014283&how=up&goto=news"
               >
                 <div
-                  className="sc-ifAKCX ixPFSp"
+                  className="sc-bxivhb eJAJCc"
                 />
               </a>
             </center>
           </td>
           <td
-            className="sc-htpNat bBeirU"
+            className="sc-ifAKCX cRBerI"
           >
             <a
               className="sc-bwzfXH cQPqep"
@@ -303,11 +303,11 @@ exports[`TopStories Rendering renders according to design 1`] = `
               Nvidia Vid2vid: High-resolution photorealistic video-to-video translation
             </a>
             <span
-              className="sc-EHOje fBEdJW"
+              className="sc-bZQynM kRBAwR"
             >
               (
               <a
-                className="sc-bZQynM goICVT sc-bwzfXH cQPqep"
+                className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
                 href="https://github.com"
               >
                 github.com
@@ -320,16 +320,16 @@ exports[`TopStories Rendering renders according to design 1`] = `
           className="sc-bdVaJa fePDys"
         >
           <td
-            className="sc-gzVnrw bmUpor"
+            className="sc-gzVnrw jetofX sc-ifAKCX cRBerI"
             colSpan="2"
           />
           <td
-            className="sc-gzVnrw bmUpor"
+            className="sc-gzVnrw jetofX sc-ifAKCX cRBerI"
           >
             204
              points by 
             <a
-              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
               href="https://news.ycombinator.com/user?id=davedx"
             >
               davedx
@@ -337,14 +337,14 @@ exports[`TopStories Rendering renders according to design 1`] = `
              0 minutess ago 
             | 
             <a
-              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
               href="#"
             >
               hide
             </a>
              |
             <a
-              className="sc-dnqmqq eMkAIw"
+              className="sc-htoDjs ioPfyt"
               href="/item?id=18038084"
               onClick={[Function]}
             >
@@ -353,20 +353,20 @@ exports[`TopStories Rendering renders according to design 1`] = `
           </td>
         </tr>
         <tr
-          className="sc-iwsKbI fMAcUh sc-bdVaJa fePDys"
+          className="sc-dnqmqq jYIjoo sc-bdVaJa fePDys"
         />
         <tr
           className="sc-bdVaJa fePDys"
         >
           <td
-            className="sc-bxivhb RPNdr sc-htpNat bBeirU"
+            className="sc-EHOje dTXZMF sc-ifAKCX cRBerI"
           >
             <span>
               5.
             </span>
           </td>
           <td
-            className="sc-htpNat bBeirU"
+            className="sc-ifAKCX cRBerI"
           >
             <center>
               <a
@@ -374,13 +374,13 @@ exports[`TopStories Rendering renders according to design 1`] = `
                 href="https://news.ycombinator.com/vote?id=18014283&how=up&goto=news"
               >
                 <div
-                  className="sc-ifAKCX ixPFSp"
+                  className="sc-bxivhb eJAJCc"
                 />
               </a>
             </center>
           </td>
           <td
-            className="sc-htpNat bBeirU"
+            className="sc-ifAKCX cRBerI"
           >
             <a
               className="sc-bwzfXH cQPqep"
@@ -389,11 +389,11 @@ exports[`TopStories Rendering renders according to design 1`] = `
               For Hackers, Anonymity Was Once Critical. That’s Changing
             </a>
             <span
-              className="sc-EHOje fBEdJW"
+              className="sc-bZQynM kRBAwR"
             >
               (
               <a
-                className="sc-bZQynM goICVT sc-bwzfXH cQPqep"
+                className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
                 href="https://www.nytimes.com"
               >
                 www.nytimes.com
@@ -406,16 +406,16 @@ exports[`TopStories Rendering renders according to design 1`] = `
           className="sc-bdVaJa fePDys"
         >
           <td
-            className="sc-gzVnrw bmUpor"
+            className="sc-gzVnrw jetofX sc-ifAKCX cRBerI"
             colSpan="2"
           />
           <td
-            className="sc-gzVnrw bmUpor"
+            className="sc-gzVnrw jetofX sc-ifAKCX cRBerI"
           >
             55
              points by 
             <a
-              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
               href="https://news.ycombinator.com/user?id=extarial"
             >
               extarial
@@ -423,14 +423,14 @@ exports[`TopStories Rendering renders according to design 1`] = `
              0 minutess ago 
             | 
             <a
-              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
               href="#"
             >
               hide
             </a>
              |
             <a
-              className="sc-dnqmqq eMkAIw"
+              className="sc-htoDjs ioPfyt"
               href="/item?id=18045339"
               onClick={[Function]}
             >
@@ -439,23 +439,23 @@ exports[`TopStories Rendering renders according to design 1`] = `
           </td>
         </tr>
         <tr
-          className="sc-iwsKbI fMAcUh sc-bdVaJa fePDys"
+          className="sc-dnqmqq jYIjoo sc-bdVaJa fePDys"
         />
         <tr
-          className="sc-fjdhpX XPQYG sc-bdVaJa fePDys"
+          className="sc-gqjmRU joDpjh sc-bdVaJa fePDys"
         />
         <tr
           className="sc-bdVaJa fePDys"
         >
           <td
-            className="sc-gZMcBi iDzNSP"
+            className="sc-ifAKCX cRBerI"
             colSpan="2"
           />
           <td
-            className="sc-gZMcBi iDzNSP"
+            className="sc-ifAKCX cRBerI"
           >
             <a
-              className="sc-gqjmRU gKsMen sc-bwzfXH cQPqep"
+              className="sc-htpNat inUtCm sc-bwzfXH cQPqep"
               href="#"
               onClick={[Function]}
             >

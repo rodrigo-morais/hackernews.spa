@@ -2,17 +2,17 @@
 
 exports[`Comments Rendering renders according to design 1`] = `
 <table
-  className="sc-iwsKbI gsisiU"
+  className="sc-gqjmRU aNPGS"
 >
   <tbody
-    className="sc-gZMcBi ggyBHg sc-bdVaJa fePDys"
+    className="sc-VigVT bXmzsK sc-bdVaJa fePDys"
   >
     <tr
       className="sc-bwzfXH bFHdpU"
     >
       <td>
         <table
-          className="sc-gqjmRU hMroIf"
+          className="sc-bZQynM dvQKdp"
         >
           <tbody
             className="sc-bdVaJa fePDys"
@@ -21,27 +21,27 @@ exports[`Comments Rendering renders according to design 1`] = `
               className="sc-bwzfXH bFHdpU"
             >
               <td
-                className="sc-EHOje kdKqto sc-bxivhb eknve"
+                className="sc-htoDjs bIuwew sc-htpNat bBeirU"
               />
               <td
-                className="sc-bxivhb eknve"
+                className="sc-gzVnrw jtqbRa sc-htpNat bBeirU"
               >
                 <center>
                   <a
-                    className="sc-htpNat ctyRBp"
+                    className="sc-bxivhb gaBtDN"
                     href="https://news.ycombinator.com/vote?id=18014283&how=up&goto=news"
                   >
                     <div
-                      className="sc-bZQynM EeKBj"
+                      className="sc-EHOje eWNKfO"
                     />
                   </a>
                 </center>
               </td>
               <td
-                className="sc-bxivhb eknve"
+                className="sc-gzVnrw jtqbRa sc-htpNat bBeirU"
               >
                 <a
-                  className="sc-ifAKCX bSaqLq sc-htpNat ctyRBp"
+                  className="sc-ifAKCX bSaqLq sc-bxivhb gaBtDN"
                   href="https://news.ycombinator.com/user?id=kizer"
                 >
                   kizer
@@ -49,14 +49,14 @@ exports[`Comments Rendering renders according to design 1`] = `
                  0 minutess ago 
                 [ 
                 <a
-                  className="sc-ifAKCX bSaqLq sc-htpNat ctyRBp"
+                  className="sc-ifAKCX bSaqLq sc-bxivhb gaBtDN"
                   href="#"
                 >
                   -
                 </a>
                  ]
                 <div
-                  className="sc-gzVnrw jMfjSA"
+                  className="sc-dnqmqq kREC"
                   dangerouslySetInnerHTML={
                     Object {
                       "__html": "I wonder why we&#x27;re still programming primarily in text - we ought to see more visual editors that operate on top of a source file, where changes to file sync immediately to editor, and vice-versa.<p>Also, that&#x27;s the sexiest README I&#x27;ve ever seen.",
@@ -64,10 +64,10 @@ exports[`Comments Rendering renders according to design 1`] = `
                   }
                 />
                 <div
-                  className="sc-htoDjs gtlfRt"
+                  className="sc-iwsKbI jPJEJS"
                 >
                   <div
-                    className="sc-dnqmqq ixnmUJ"
+                    className="sc-gZMcBi ePVcsQ"
                     href="#"
                   >
                     reply
@@ -84,7 +84,7 @@ exports[`Comments Rendering renders according to design 1`] = `
     >
       <td>
         <table
-          className="sc-VigVT eegDDR"
+          className="sc-bZQynM dvQKdp"
         >
           <tbody
             className="sc-bdVaJa fePDys"
@@ -93,27 +93,27 @@ exports[`Comments Rendering renders according to design 1`] = `
               className="sc-bwzfXH bFHdpU"
             >
               <td
-                className="sc-EHOje kdKqto sc-bxivhb eknve"
+                className="sc-htoDjs bIuwew sc-htpNat bBeirU"
               />
               <td
-                className="sc-bxivhb eknve"
+                className="sc-gzVnrw jtqbRa sc-htpNat bBeirU"
               >
                 <center>
                   <a
-                    className="sc-htpNat ctyRBp"
+                    className="sc-bxivhb gaBtDN"
                     href="https://news.ycombinator.com/vote?id=18014283&how=up&goto=news"
                   >
                     <div
-                      className="sc-bZQynM EeKBj"
+                      className="sc-EHOje eWNKfO"
                     />
                   </a>
                 </center>
               </td>
               <td
-                className="sc-bxivhb eknve"
+                className="sc-gzVnrw jtqbRa sc-htpNat bBeirU"
               >
                 <a
-                  className="sc-ifAKCX bSaqLq sc-htpNat ctyRBp"
+                  className="sc-ifAKCX bSaqLq sc-bxivhb gaBtDN"
                   href="https://news.ycombinator.com/user?id=wongarsu"
                 >
                   wongarsu
@@ -121,14 +121,14 @@ exports[`Comments Rendering renders according to design 1`] = `
                  0 minutess ago 
                 [ 
                 <a
-                  className="sc-ifAKCX bSaqLq sc-htpNat ctyRBp"
+                  className="sc-ifAKCX bSaqLq sc-bxivhb gaBtDN"
                   href="#"
                 >
                   -
                 </a>
                  ]
                 <div
-                  className="sc-gzVnrw jMfjSA"
+                  className="sc-dnqmqq kREC"
                   dangerouslySetInnerHTML={
                     Object {
                       "__html": "The interface looks really slick, but isn&#x27;t intuitive at all. I constantly have to refer back to the video to find out how to do anything.<p>You build the graph from right to left (unusual but ok), but if you try to actually draw your lines from right to left they don&#x27;t connect, you have to draw them left to right.<p>To rename something you click the element and type the name. Fairly straightforward, except that the interface gives no indication that this is possible. No blinking text cursor or anything of the sort.<p>The &quot;arguments&quot; category actually has nothing to do with arguments, it&#x27;s just &quot;use stuff you named previously&quot;. Why is that not something that&#x27;s connected on the graph?<p>Oh, right, that&#x27;s because of the way queries&#x2F;mutations work. The name of the query is combined from the name of the query node and the name of the output node. But instead of a query having two connectors, one for input and one for output, it just has everything at a depth of one as outputs, and the child nodes of the output are the inputs (actually, that&#x27;s how types and everything else works too). I certainly wouldn&#x27;t have guessed that.<p>Compare Blender&#x27;s node editor: <a href=\\"https:&#x2F;&#x2F;code.blender.org&#x2F;wp-content&#x2F;uploads&#x2F;2012&#x2F;01&#x2F;node_group_interface18.png\\" rel=\\"nofollow\\">https:&#x2F;&#x2F;code.blender.org&#x2F;wp-content&#x2F;uploads&#x2F;2012&#x2F;01&#x2F;node_gro...</a><p>Anyone can look at a screenshot of Blender&#x27;s editor and knows what&#x27;s going on: labeled connectors, no magic with different layers, etc. Creating them is also straightforward. In comparison, if you show a graph from this tool to a random developer that works with GraphQL he&#x2F;she likely won&#x27;t understand what schema the graph is supposed to represent.",
@@ -136,10 +136,10 @@ exports[`Comments Rendering renders according to design 1`] = `
                   }
                 />
                 <div
-                  className="sc-htoDjs gtlfRt"
+                  className="sc-iwsKbI jPJEJS"
                 >
                   <div
-                    className="sc-dnqmqq ixnmUJ"
+                    className="sc-gZMcBi ePVcsQ"
                     href="#"
                   >
                     reply
@@ -150,7 +150,7 @@ exports[`Comments Rendering renders according to design 1`] = `
                 >
                   <td>
                     <table
-                      className="sc-jTzLTM kqLCkN"
+                      className="sc-bZQynM dvQKdp"
                     >
                       <tbody
                         className="sc-bdVaJa fePDys"
@@ -159,27 +159,27 @@ exports[`Comments Rendering renders according to design 1`] = `
                           className="sc-bwzfXH bFHdpU"
                         >
                           <td
-                            className="sc-EHOje kdKqto sc-bxivhb eknve"
+                            className="sc-htoDjs bIuwew sc-htpNat bBeirU"
                           />
                           <td
-                            className="sc-bxivhb eknve"
+                            className="sc-gzVnrw jtqbRa sc-htpNat bBeirU"
                           >
                             <center>
                               <a
-                                className="sc-htpNat ctyRBp"
+                                className="sc-bxivhb gaBtDN"
                                 href="https://news.ycombinator.com/vote?id=18014283&how=up&goto=news"
                               >
                                 <div
-                                  className="sc-bZQynM EeKBj"
+                                  className="sc-EHOje eWNKfO"
                                 />
                               </a>
                             </center>
                           </td>
                           <td
-                            className="sc-bxivhb eknve"
+                            className="sc-gzVnrw jtqbRa sc-htpNat bBeirU"
                           >
                             <a
-                              className="sc-ifAKCX bSaqLq sc-htpNat ctyRBp"
+                              className="sc-ifAKCX bSaqLq sc-bxivhb gaBtDN"
                               href="https://news.ycombinator.com/user?id=aexol"
                             >
                               aexol
@@ -187,14 +187,14 @@ exports[`Comments Rendering renders according to design 1`] = `
                              0 minutess ago 
                             [ 
                             <a
-                              className="sc-ifAKCX bSaqLq sc-htpNat ctyRBp"
+                              className="sc-ifAKCX bSaqLq sc-bxivhb gaBtDN"
                               href="#"
                             >
                               -
                             </a>
                              ]
                             <div
-                              className="sc-gzVnrw jMfjSA"
+                              className="sc-dnqmqq kREC"
                               dangerouslySetInnerHTML={
                                 Object {
                                   "__html": "Thanks for that feedback. This is really valuable for me. I will correct everything you described here. I am not an UX designer to, so maybe this is the reason of bad UX and UI.<p>- I will correct drawing the lines
@@ -204,10 +204,10 @@ exports[`Comments Rendering renders according to design 1`] = `
                               }
                             />
                             <div
-                              className="sc-htoDjs gtlfRt"
+                              className="sc-iwsKbI jPJEJS"
                             >
                               <div
-                                className="sc-dnqmqq ixnmUJ"
+                                className="sc-gZMcBi ePVcsQ"
                                 href="#"
                               >
                                 reply

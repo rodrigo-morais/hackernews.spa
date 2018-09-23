@@ -1,18 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 
 import Tr from '../shared/Tr'
-import A from '../shared/A'
-
-const Td = styled.td`
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 10pt;
-`
-
-const AColor = styled(A)`
-	color: #828282;
-`
+import Td from '../shared/Td'
+import AColor from '../shared/AColor'
 
 const More = ({ page, getNextTopStories }) => (
 	<Tr>
