@@ -29,7 +29,7 @@ const TdFirst = styled(TdShared)`
   width: 1px;
 `
 
-const Comment = ({ comment, replies }) => {
+const Comment = ({ comment, replies, visible, toggleVisibility }) => {
 	const { time, timeMeasure } = getTime(comment.time)
 
   return (
@@ -45,11 +45,13 @@ const Comment = ({ comment, replies }) => {
             <AColor href={`${HN_URL}user?id=${comment.by}`}>{comment.by}</AColor>
             {` ${time} ${timeMeasure} ago `}
             [&nbsp;
-            <AColor href="#">-</AColor>
+            <AColor onClick={toggleVisibility}>
+              { visible ? '-' : `+ ${replies.length + 1}` }
+            </AColor>
             &nbsp;]
-            <Text text={comment.text} />
-            <Reply />
-            { replies }
+            { visible && <Text key={comment.id} text={comment.text} /> }
+            { visible && <Reply />}
+            { visible && replies }
           </Td>
         </Tr>
       </Tbody>
@@ -60,6 +62,8 @@ const Comment = ({ comment, replies }) => {
 Comment.propTypes = {
 	comment: PropTypes.object.isRequired,
 	replies: PropTypes.array.isRequired,
+	visible: PropTypes.bool.isRequired,
+	toggleVisibility: PropTypes.func.isRequired,
 }
 
 export default Comment

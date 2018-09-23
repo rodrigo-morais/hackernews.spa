@@ -18,7 +18,7 @@ exports[`Header Rendering renders according to design 1`] = `
             className="sc-htpNat dvyfjR"
           >
             <a
-              className="sc-bdVaJa kEMvDu"
+              className="sc-bdVaJa gASuaN"
               href="#"
             >
               <img
@@ -34,7 +34,7 @@ exports[`Header Rendering renders according to design 1`] = `
               className="sc-bxivhb CxaZp"
             >
               <a
-                className="sc-bdVaJa kEMvDu"
+                className="sc-bdVaJa gASuaN"
                 href="#"
               >
                 Hacker News
@@ -44,7 +44,7 @@ exports[`Header Rendering renders according to design 1`] = `
               className="sc-ifAKCX dzurso"
             >
               <a
-                className="sc-bdVaJa kEMvDu"
+                className="sc-bdVaJa gASuaN"
                 href="newest"
               >
                 new
@@ -59,7 +59,7 @@ exports[`Header Rendering renders according to design 1`] = `
               className="sc-ifAKCX dzurso"
             >
               <a
-                className="sc-bdVaJa kEMvDu"
+                className="sc-bdVaJa gASuaN"
                 href="https://news.ycombinator.com/newcomments"
               >
                 comments
@@ -74,7 +74,7 @@ exports[`Header Rendering renders according to design 1`] = `
               className="sc-ifAKCX dzurso"
             >
               <a
-                className="sc-bdVaJa kEMvDu"
+                className="sc-bdVaJa gASuaN"
                 href="https://news.ycombinator.com/show"
               >
                 show
@@ -89,7 +89,7 @@ exports[`Header Rendering renders according to design 1`] = `
               className="sc-ifAKCX dzurso"
             >
               <a
-                className="sc-bdVaJa kEMvDu"
+                className="sc-bdVaJa gASuaN"
                 href="https://news.ycombinator.com/ask"
               >
                 ask
@@ -104,7 +104,7 @@ exports[`Header Rendering renders according to design 1`] = `
               className="sc-ifAKCX dzurso"
             >
               <a
-                className="sc-bdVaJa kEMvDu"
+                className="sc-bdVaJa gASuaN"
                 href="https://news.ycombinator.com/jobs"
               >
                 jobs
@@ -119,7 +119,7 @@ exports[`Header Rendering renders according to design 1`] = `
               className="sc-ifAKCX dzurso"
             >
               <a
-                className="sc-bdVaJa kEMvDu"
+                className="sc-bdVaJa gASuaN"
                 href="https://news.ycombinator.com/submit"
               >
                 submit
@@ -130,7 +130,7 @@ exports[`Header Rendering renders according to design 1`] = `
             className="sc-gzVnrw cVeLgT"
           >
             <a
-              className="sc-bdVaJa kEMvDu"
+              className="sc-bdVaJa gASuaN"
               href="https://news.ycombinator.com/login?goto=news"
             >
               login

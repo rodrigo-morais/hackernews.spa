@@ -21,9 +21,11 @@ describe('TopStories', () => {
   let wraper
 
   beforeEach(() => {
-    wraper = (<StaticRouter location="/comments" context={context}>
-      <TopStories topStories={topStories} getNextTopStories={getNextTopStories} getComments={getComments} />
-    </StaticRouter>)
+    wraper = (
+      <StaticRouter location="/comments" context={context}>
+        <TopStories topStories={topStories} getNextTopStories={getNextTopStories} getComments={getComments} />
+      </StaticRouter>
+    )
   })
 
   describe('Rendering', () => {

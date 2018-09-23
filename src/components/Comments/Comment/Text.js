@@ -11,12 +11,16 @@ const Div = styled.div`
   margin-top: 10px;
 `
 
-const Text = (text) => (
+const Text = ({ text }) => (
   <Div dangerouslySetInnerHTML={{ __html: text }} />
 )
 
 Text.propTypes = {
-	text: PropTypes.string.isRequired,
+  text: PropTypes.string,
+}
+
+Text.defaultProps = {
+  text: '',
 }
 
 export default Text
