@@ -22,6 +22,7 @@
 		"jsx-a11y/anchor-is-valid": 0,
 		"semi": 0,
 		"react/no-array-index-key": 0,
+    "no-extra-boolean-cast": 0,
 		"arrow-parens": [
 			"error",
 			"always"

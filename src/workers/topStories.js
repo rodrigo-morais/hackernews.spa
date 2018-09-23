@@ -1,21 +1,27 @@
 import { HN_API, HN_FIRST_PAGE, HN_NEXT_PAGE } from '../constants'
 
-export const getTopStories = (page, postMessage) => fetch(`${HN_API}topstories.json`)
-	.then((res) => res.json())
-	.then((stories) => {
-		const firstPage = stories.slice(0, 30).map((story) => fetch(`${HN_API}item/${story}.json`).then((res) => res.json()))
-		return Promise.all(firstPage)
-			.then((items) => {
-				postMessage({ key: HN_FIRST_PAGE, data: items, page })
+const getFetchItems = (stories, page) => stories
+  .slice(30 * page, 30 * page + 30)
+  .map(async (story) => {
+    const res = await fetch(`${HN_API}item/${story}.json`)
+    return res.json()
+  })
 
-				if (page) {
-					const nextPage = stories.slice(30 * page, 30 * page + 30).map((story) => fetch(`${HN_API}item/${story}.json`).then((res) => res.json()))
-				return Promise.all(nextPage)
-					.then((nextItems) => {
-						postMessage({ key: HN_NEXT_PAGE, data: nextItems, page })
-					})
-				}
+export const getTopStories = async (page, postMessage) => {
+  const res = await fetch(`${HN_API}topstories.json`)
+  const stories = await res.json()
+  const firstPage = await getFetchItems(stories, 0)
 
-				return null
-			})
-	})
+  const items = await Promise.all(firstPage)
+
+  postMessage({ key: HN_FIRST_PAGE, data: items, page })
+
+  if (page) {
+    const nextPage = await getFetchItems(stories, page)
+		const nextItems = await Promise.all(nextPage)
+
+    postMessage({ key: HN_NEXT_PAGE, data: nextItems, page })
+  }
+
+  return items
+}
