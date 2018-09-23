@@ -6,11 +6,441 @@ exports[`TopStories Rendering renders according to design 1`] = `
 >
   <td>
     <table
-      className="sc-jTzLTM fHaWlQ"
+      className="sc-VigVT ekbYvL"
     >
       <tbody
-        className="sc-VigVT hjRoCW"
+        className="sc-jTzLTM hkFqJX"
       >
+        <tr
+          className="sc-bdVaJa fePDys"
+        >
+          <td
+            className="sc-bxivhb RPNdr sc-htpNat bBeirU"
+          >
+            <span>
+              1.
+            </span>
+          </td>
+          <td
+            className="sc-htpNat bBeirU"
+          >
+            <center>
+              <a
+                className="sc-bwzfXH cQPqep"
+                href="https://news.ycombinator.com/vote?id=18014283&how=up&goto=news"
+              >
+                <div
+                  className="sc-ifAKCX ixPFSp"
+                />
+              </a>
+            </center>
+          </td>
+          <td
+            className="sc-htpNat bBeirU"
+          >
+            <a
+              className="sc-bwzfXH cQPqep"
+              href="https://github.com/slothking-online/graphql-editor"
+            >
+              GraphQL editor – Visual node editor for GraphQL
+            </a>
+            <span
+              className="sc-EHOje fBEdJW"
+            >
+              (
+              <a
+                className="sc-bZQynM goICVT sc-bwzfXH cQPqep"
+                href="https://github.com"
+              >
+                github.com
+              </a>
+              )
+            </span>
+          </td>
+        </tr>
+        <tr
+          className="sc-bdVaJa fePDys"
+        >
+          <td
+            className="sc-gzVnrw bmUpor"
+            colSpan="2"
+          />
+          <td
+            className="sc-gzVnrw bmUpor"
+          >
+            79
+             points by 
+            <a
+              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              href="https://news.ycombinator.com/user?id=aexol"
+            >
+              aexol
+            </a>
+             0 minutess ago 
+            | 
+            <a
+              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              href="#"
+            >
+              hide
+            </a>
+             |
+            <a
+              className="sc-dnqmqq eMkAIw"
+              href="/item?id=18045532"
+              onClick={[Function]}
+            >
+               3 comments
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI fMAcUh sc-bdVaJa fePDys"
+        />
+        <tr
+          className="sc-bdVaJa fePDys"
+        >
+          <td
+            className="sc-bxivhb RPNdr sc-htpNat bBeirU"
+          >
+            <span>
+              2.
+            </span>
+          </td>
+          <td
+            className="sc-htpNat bBeirU"
+          >
+            <center>
+              <a
+                className="sc-bwzfXH cQPqep"
+                href="https://news.ycombinator.com/vote?id=18014283&how=up&goto=news"
+              >
+                <div
+                  className="sc-ifAKCX ixPFSp"
+                />
+              </a>
+            </center>
+          </td>
+          <td
+            className="sc-htpNat bBeirU"
+          >
+            <a
+              className="sc-bwzfXH cQPqep"
+              href="https://github.com/manatlan/vbuild"
+            >
+              Vbuild: “Compile” Vue components to standalone HTML/JS/CSS
+            </a>
+            <span
+              className="sc-EHOje fBEdJW"
+            >
+              (
+              <a
+                className="sc-bZQynM goICVT sc-bwzfXH cQPqep"
+                href="https://github.com"
+              >
+                github.com
+              </a>
+              )
+            </span>
+          </td>
+        </tr>
+        <tr
+          className="sc-bdVaJa fePDys"
+        >
+          <td
+            className="sc-gzVnrw bmUpor"
+            colSpan="2"
+          />
+          <td
+            className="sc-gzVnrw bmUpor"
+          >
+            31
+             points by 
+            <a
+              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              href="https://news.ycombinator.com/user?id=manatlan"
+            >
+              manatlan
+            </a>
+             0 minutess ago 
+            | 
+            <a
+              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              href="#"
+            >
+              hide
+            </a>
+             |
+            <a
+              className="sc-dnqmqq eMkAIw"
+              href="/item?id=18045813"
+              onClick={[Function]}
+            >
+               7 comments
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI fMAcUh sc-bdVaJa fePDys"
+        />
+        <tr
+          className="sc-bdVaJa fePDys"
+        >
+          <td
+            className="sc-bxivhb RPNdr sc-htpNat bBeirU"
+          >
+            <span>
+              3.
+            </span>
+          </td>
+          <td
+            className="sc-htpNat bBeirU"
+          >
+            <center>
+              <a
+                className="sc-bwzfXH cQPqep"
+                href="https://news.ycombinator.com/vote?id=18014283&how=up&goto=news"
+              >
+                <div
+                  className="sc-ifAKCX ixPFSp"
+                />
+              </a>
+            </center>
+          </td>
+          <td
+            className="sc-htpNat bBeirU"
+          >
+            <a
+              className="sc-bwzfXH cQPqep"
+              href="https://www.polygon.com/features/2016/1/14/10757460/the-game-industry-of-iran"
+            >
+              The game industry of Iran (2016)
+            </a>
+            <span
+              className="sc-EHOje fBEdJW"
+            >
+              (
+              <a
+                className="sc-bZQynM goICVT sc-bwzfXH cQPqep"
+                href="https://www.polygon.com"
+              >
+                www.polygon.com
+              </a>
+              )
+            </span>
+          </td>
+        </tr>
+        <tr
+          className="sc-bdVaJa fePDys"
+        >
+          <td
+            className="sc-gzVnrw bmUpor"
+            colSpan="2"
+          />
+          <td
+            className="sc-gzVnrw bmUpor"
+          >
+            29
+             points by 
+            <a
+              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              href="https://news.ycombinator.com/user?id=1_player"
+            >
+              1_player
+            </a>
+             0 minutess ago 
+            | 
+            <a
+              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              href="#"
+            >
+              hide
+            </a>
+             |
+            <a
+              className="sc-dnqmqq eMkAIw"
+              href="/item?id=18039056"
+              onClick={[Function]}
+            >
+               discuss
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI fMAcUh sc-bdVaJa fePDys"
+        />
+        <tr
+          className="sc-bdVaJa fePDys"
+        >
+          <td
+            className="sc-bxivhb RPNdr sc-htpNat bBeirU"
+          >
+            <span>
+              4.
+            </span>
+          </td>
+          <td
+            className="sc-htpNat bBeirU"
+          >
+            <center>
+              <a
+                className="sc-bwzfXH cQPqep"
+                href="https://news.ycombinator.com/vote?id=18014283&how=up&goto=news"
+              >
+                <div
+                  className="sc-ifAKCX ixPFSp"
+                />
+              </a>
+            </center>
+          </td>
+          <td
+            className="sc-htpNat bBeirU"
+          >
+            <a
+              className="sc-bwzfXH cQPqep"
+              href="https://github.com/NVIDIA/vid2vid"
+            >
+              Nvidia Vid2vid: High-resolution photorealistic video-to-video translation
+            </a>
+            <span
+              className="sc-EHOje fBEdJW"
+            >
+              (
+              <a
+                className="sc-bZQynM goICVT sc-bwzfXH cQPqep"
+                href="https://github.com"
+              >
+                github.com
+              </a>
+              )
+            </span>
+          </td>
+        </tr>
+        <tr
+          className="sc-bdVaJa fePDys"
+        >
+          <td
+            className="sc-gzVnrw bmUpor"
+            colSpan="2"
+          />
+          <td
+            className="sc-gzVnrw bmUpor"
+          >
+            204
+             points by 
+            <a
+              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              href="https://news.ycombinator.com/user?id=davedx"
+            >
+              davedx
+            </a>
+             0 minutess ago 
+            | 
+            <a
+              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              href="#"
+            >
+              hide
+            </a>
+             |
+            <a
+              className="sc-dnqmqq eMkAIw"
+              href="/item?id=18038084"
+              onClick={[Function]}
+            >
+               98 comments
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI fMAcUh sc-bdVaJa fePDys"
+        />
+        <tr
+          className="sc-bdVaJa fePDys"
+        >
+          <td
+            className="sc-bxivhb RPNdr sc-htpNat bBeirU"
+          >
+            <span>
+              5.
+            </span>
+          </td>
+          <td
+            className="sc-htpNat bBeirU"
+          >
+            <center>
+              <a
+                className="sc-bwzfXH cQPqep"
+                href="https://news.ycombinator.com/vote?id=18014283&how=up&goto=news"
+              >
+                <div
+                  className="sc-ifAKCX ixPFSp"
+                />
+              </a>
+            </center>
+          </td>
+          <td
+            className="sc-htpNat bBeirU"
+          >
+            <a
+              className="sc-bwzfXH cQPqep"
+              href="https://www.nytimes.com/2018/09/22/technology/defcon-hackers-privacy-anonymity.html"
+            >
+              For Hackers, Anonymity Was Once Critical. That’s Changing
+            </a>
+            <span
+              className="sc-EHOje fBEdJW"
+            >
+              (
+              <a
+                className="sc-bZQynM goICVT sc-bwzfXH cQPqep"
+                href="https://www.nytimes.com"
+              >
+                www.nytimes.com
+              </a>
+              )
+            </span>
+          </td>
+        </tr>
+        <tr
+          className="sc-bdVaJa fePDys"
+        >
+          <td
+            className="sc-gzVnrw bmUpor"
+            colSpan="2"
+          />
+          <td
+            className="sc-gzVnrw bmUpor"
+          >
+            55
+             points by 
+            <a
+              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              href="https://news.ycombinator.com/user?id=extarial"
+            >
+              extarial
+            </a>
+             0 minutess ago 
+            | 
+            <a
+              className="sc-htoDjs flamxC sc-bwzfXH cQPqep"
+              href="#"
+            >
+              hide
+            </a>
+             |
+            <a
+              className="sc-dnqmqq eMkAIw"
+              href="/item?id=18045339"
+              onClick={[Function]}
+            >
+               12 comments
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI fMAcUh sc-bdVaJa fePDys"
+        />
         <tr
           className="sc-fjdhpX XPQYG sc-bdVaJa fePDys"
         />

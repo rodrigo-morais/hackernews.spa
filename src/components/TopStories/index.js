@@ -7,17 +7,11 @@ import SecondLine from './SecondLine'
 import ThirdLine from './ThirdLine'
 import More from './More'
 
+import TableBody from '../shared/TableBody'
 import Tr from '../shared/Tr'
 import Tbody from '../shared/Tbody'
 
-const Table = styled.table`
-	border-top-width: 0px;
-	border-right-width: 0px;
-	border-bottom-width: 0px;
-	border-left-width: 0px;
-	-webkit-border-horizontal-spacing: 0px;
-	-webkit-border-vertical-spacing: 0px;
-`
+
 const TrMoreSpace = styled(Tr)`
 	height: 10px;
 `
@@ -25,7 +19,7 @@ const TrMoreSpace = styled(Tr)`
 const TopStories = ({ topStories: { data: { stories, page, last } }, getNextTopStories, getComments }) => (
 	<Tr>
 		<td>
-			<Table>
+			<TableBody>
 				<Tbody>
 					{ !!stories && stories.map((story, index) => [<FirstLine story={story} page={page} key={`First_${story.id}`} index={index} />,
 							<SecondLine story={story} getComments={getComments} key={`Second_${story.id}`} />,
@@ -33,7 +27,7 @@ const TopStories = ({ topStories: { data: { stories, page, last } }, getNextTopS
 					<TrMoreSpace />
           {!last && <More page={page} getNextTopStories={getNextTopStories} />}
 				</Tbody>
-			</Table>
+			</TableBody>
 		</td>
 	</Tr>
 )
