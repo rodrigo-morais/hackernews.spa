@@ -2,15 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { HN_URL } from '../../constants'
+import { HN_URL } from '../../../constants'
 
-import getTime from '../../lib/time'
+import getTime from '../../../lib/time'
 
-import Tbody from '../shared/Tbody'
-import Tr from '../shared/Tr'
-import TdShared from '../shared/Td'
-import AColor from '../shared/AColor'
-import Vote from '../shared/Vote'
+import Text from './Text'
+import Reply from './Reply'
+
+import Tbody from '../../shared/Tbody'
+import Tr from '../../shared/Tr'
+import TdShared from '../../shared/Td'
+import AColor from '../../shared/AColor'
+import Vote from '../../shared/Vote'
 
 const Table = styled.table`
   padding-top: 10px;
@@ -24,24 +27,6 @@ const Td = styled(TdShared)`
 
 const TdFirst = styled(TdShared)`
   width: 1px;
-`
-
-const Commentary = styled.div`
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 9pt;
-  color: #000000;
-  max-width: 1215px;
-  overflow: auto;
-  margin-top: 10px;
-`
-
-const Reply = styled.div`
-  color: #000000;
-  font-size: x-small;
-`
-
-const AReply = styled.div`
-  text-decoration: underline;
 `
 
 const Comment = ({ comment, replies }) => {
@@ -62,10 +47,8 @@ const Comment = ({ comment, replies }) => {
             [&nbsp;
             <AColor href="#">-</AColor>
             &nbsp;]
-            <Commentary dangerouslySetInnerHTML={{ __html: comment.text }} />
-            <Reply>
-              <AReply href="#">reply</AReply>
-            </Reply>
+            <Text text={comment.text} />
+            <Reply />
             { replies }
           </Td>
         </Tr>
