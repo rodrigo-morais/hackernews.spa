@@ -7,7 +7,7 @@ This app clones Hacker News using React / Redux creating a SPA.
 Only top stories and comments from stories are implemented.
 
 
-Hacker News provides an [API](https://github.com/HackerNews/API) which provides multiple endpoints and in order to get some valuable data it is necessary to call more than one endpoint. E.g. in order to present the top stories first it is necessary to call https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty which will return an array as ```[ 9129911, 9129199, 9127761, 9128141, 9128264, 9127792, 9129248, 9127092, 9128367, ..., 9038733 ]```. To access the stories including the data, and not only the ids, this endpoint https://hacker-news.firebaseio.com/v0/item/{id}.json needs to be called for every item in the array returned in the first call.
+Hacker News provides an [API](https://github.com/HackerNews/API) which provides multiple endpoints and in order to get some valuable data it is necessary to call more than one endpoint. E.g. in order to present the top stories first it is necessary to call https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty which will return an array such as ```[ 9129911, 9129199, 9127761, 9128141, 9128264, 9127792, 9129248, 9127092, 9128367, ..., 9038733 ]```. To access the stories including the data, and not only the ids, this endpoint https://hacker-news.firebaseio.com/v0/item/{id}.json needs to be called for every item in the array and returned in the first call.
 
 This approach has two issues for this app: [N+1](https://www.infoq.com/articles/N-Plus-1) and performance
 
