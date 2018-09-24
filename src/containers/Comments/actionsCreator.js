@@ -1,26 +1,40 @@
+import { HN_API } from '../../constants'
 import { requestComments, receiveComments, failComments } from './actions'
-import CommentsWorker from '../../workers/comments.worker'
 
-const commentsWorker = new CommentsWorker()
-let globalDispatch
+const getCommentsByStoryId = (storyId) => async (dispatch) => {
+  const res = await fetch(`${HN_API}item/${storyId}.json`)
+  const story = await res.json()
 
-commentsWorker.onmessage = (e) => {
-  globalDispatch(requestComments())
+  return getComments(story.kids)(dispatch)
+}
+
+const getComments = (commentIds) => async (dispatch) => {
+  dispatch(requestComments())
   try {
-    globalDispatch(receiveComments(e.data.comments))
+    const comments = await Promise.all(commentIds.map((commentId) => getComment(commentId)))
 
-    if (!e.data.all) {
-      commentsWorker.postMessage({ commentIds: e.data.ids, all: true })
-    }
+    dispatch(receiveComments(comments))
   } catch (err) {
-    globalDispatch(failComments())
+    dispatch(failComments())
   }
 }
 
-const getComments = (commentIds) => (dispatch) => {
-	globalDispatch = dispatch
+const getComment = (commentId) => new Promise(async (resolve, reject) => {
+  try {
+    const res = await fetch(`${HN_API}item/${commentId}.json`)
+    const comment = await res.json()
 
-  commentsWorker.postMessage({ commentIds })
-}
+    if (!comment.kids || comment.kids.length === 0) {
+      resolve(comment)
+      return
+    }
 
-export { getComments }
+    const kids = await Promise.all(comment.kids.map((reply) => getComment(reply)))
+    resolve({ ...comment, ...{ kids } })
+  } catch (err) {
+    reject()
+  }
+})
+
+
+export { getComments, getCommentsByStoryId }
