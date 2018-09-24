@@ -21,7 +21,7 @@ The possible solutions are:
   - use an API Gateway such as AWS API Gateway to aggreagate the API calls
   
 ## Performance
-The problem of performance is created for the API that should be called multiple times and the amount of data.
+The performance problems stem from the need to have to call the API multiple times and the sheer size for the of data which should be presented.
 
 ### Solution
 The app already tries to improve the performance using [async/await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) to load data asynchronously, a [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) to get some data in background and [localstorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to keep data on the client side.
